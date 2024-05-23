@@ -1,0 +1,59 @@
+/* sidebar.css */
+.aside {
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: var(--body-color);
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    padding: 2.5rem 1rem; /* Padding'i biraz daralttım */
+    width: 200px; /* Sidebar genişliğini artırdım */
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    z-index: 10;
+}
+
+.nav__logo {
+    display: flex;
+    justify-content: center;
+    margin-top: 0; /* Tepeden logo boşluğunu kaldırdım */
+    margin-bottom: 0.25rem; /* Logonun altındaki boşluğu azalttım */
+}
+
+.logo-img {
+    width: 150px; /* Logonun genişliğini artırdım */
+    height: auto;
+    display: block;
+}
+
+.nav__menu {
+    flex-grow: 1;
+}
+
+.nav__list {
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.nav__link {
+    font-size: 1rem; /* Yazının boyutunu küçülttüm */
+    color: var(--title-color);
+    font-weight: normal; /* Yazıların kalınlığını azalttım */
+    text-decoration: none; /* Link altı çizgisini kaldırdım */
+    display: flex;
+    align-items: center;
+}
+
+.nav__link i {
+    margin-right: 0.5rem; /* İkon ve metin arasına boşluk ekledim */
+}
+
+.footerad {
+    color: hsl(245, 15%, 65%);
+    font-size: var(--small-font-size);
+    transform: rotate(-180dg);
+    writing-mode: vertical-rl;
+    padding-top: 0.43rem;
+}

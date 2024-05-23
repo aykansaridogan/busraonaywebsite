@@ -1,0 +1,155 @@
+/* home.css */
+.home {
+    padding: 4rem 0; /* Üst ve alt boşluk */
+    text-align: center; /* Metni ortala */
+    position: relative; /* Shapes bileşeni için relative konum */
+  }
+  
+  .home__img {
+    width: 190px; /* Resim genişliği */
+    height: auto; /* Orantılı yükseklik */
+    border-radius: 50%; /* Resme yuvarlak köşe */
+    margin-bottom: 0.43rem; /* Resmin altındaki boşluk */
+  }
+  
+  .home__name {
+    font-size: 1.5rem; /* İsim büyüklüğü */
+    color: var(--title-color); /* İsim rengi */
+  }
+  
+  .social-gap {
+    margin-right: 1rem; /* İstediğiniz boşluğu ayarlayabilirsiniz */
+  }
+  
+  .home__education {
+    font-size: 0.62rem; /* Eğitim bilgisi büyüklüğü */
+    color: var(--text-color); /* Eğitim bilgisi rengi */
+    font-style: italic; /* İtalik stil */
+  }
+  
+  .btn {
+    display: inline-block; /* Butonu blok olmayan öğe yap */
+    width: 120px;
+    background-color: black; /* Arkaplan rengi */
+    color: white; /* Yazı rengi */
+    padding: 1rem 1rem; /* Doldurma */
+    border-radius: 25px; /* Köşe yuvarlama */
+    font-size: 0.45rem; /* Yazı büyüklüğü */
+    transition: background-color 0.3s ease; /* Geçiş efekti */
+  }
+  
+  .scroll_down {
+    margin-top: 1rem; /* Üstten boşluk ekle */
+  }
+  
+  .home__scroll-name {
+    font-size: var(--small-font-size);
+    display: block;
+    margin-bottom: 0.5rem;
+  }
+  
+  .mouse {
+    border: 1px solid var(--text-color);
+    display:flex;
+    height: 1.6rem;
+    width: 1.25rem;
+    position: relative;
+    margin: 0 auto; /* Mouse'u ortala */
+  }
+  
+  .wheel {
+    width: 4px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--text-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    animation: scrollWheel 1s ease infinite alternate;
+  }
+  
+  @keyframes scrollWheel {
+    0% {
+      transform: translate(-50%, -50%) scaleY(1);
+    }
+    100% {
+      transform: translate(-50%, -50%) scaleY(0);
+    }
+  }
+  
+.shapes {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width:  100%;
+    overflow: hidden;
+    pointer-events: none;
+}
+
+.shape {
+    position: absolute;
+}
+
+.s1 {
+    left: 2%;
+    top: 10%;
+}
+.s2 {
+    left: 18%;
+    top: 10%;
+}
+.s3 {
+    left: 5%;
+    bottom: 30%;
+}
+.s4 {
+    left: 2%;
+    bottom: 30%;
+}
+.s5 {
+    right: 10%;
+    bottom: 20%;
+}
+.s6 {
+    right: 20%;
+    bottom: 40%;
+}
+.s7 {
+    right: 25%;
+    top: 25%;
+}
+.s8 {
+    right: 30%;
+    top: 5%;
+}
+.s9 {
+    left: 25%;
+    bottom: 10%;
+}
+.s10 {
+    right: 5%;
+    top: 50%;
+}
+.s11 {
+    left: 10%;
+    bottom: 5%;
+}.shapes-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .shapes-top,
+  .shapes-bottom {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 20px 0;
+  }
+  
+  .shape {
+    margin: 10px;
+  }
+  

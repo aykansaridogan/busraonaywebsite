@@ -1,0 +1,99 @@
+.work__filters {
+    display: flex;
+    align-items: center;
+    column-gap: 1.875rem;
+    margin-bottom: 2.5rem;
+    margin-left: 2.5rem; /* Soldan uzaklaştırmak için ekledik */
+  }
+  
+  .work__item {
+    cursor: pointer;
+    font-weight: var(--font-bold);
+    transition: .3s;
+  }
+  
+  .work__item:hover {
+    color: grey;
+  }
+  
+  .work__item.active {
+    color: #6c6ce5;
+  }
+  
+  .work__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.875rem;
+    padding-left: 2.875rem;
+  }
+  
+  .work__card {
+    position: relative;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow);
+    overflow: hidden; /* İçerik taşmasını engellemek için */
+  }
+  
+  .work__thumbnail {
+    position: relative;
+  }
+  
+  .work__mask {
+    background: rgba(108, 108, 229, 0.6);
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    transition: opacity 0.3s ease-in-out;
+    opacity: 0;
+  }
+  
+  .work__card:hover .work__mask {
+    opacity: 1;
+  }
+  
+  .work_img {
+    width: 100%;
+    display: block;
+    border-radius: var(--border-radius);
+  }
+  
+  .work__category,
+  .work__title,
+  .work__button {
+    position: absolute;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .work__category {
+    top: 10px;
+    left: 10px;
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    border-radius: var(--border-radius);
+    padding: 0.5rem;
+  }
+  
+  .work__title {
+    bottom: 50px;
+    left: 10px;
+    color: white;
+    font-size: 1.25rem;
+  }
+  
+  .work__button {
+    bottom: 10px;
+    left: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+  }
+  
+  .work__card:hover .work__category,
+  .work__card:hover .work__title,
+  .work__card:hover .work__button {
+    opacity: 1;
+  }
+  
