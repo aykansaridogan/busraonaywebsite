@@ -6,7 +6,7 @@ import About from './components/about/About';
 import Services from './components/services/Services';
 import Resume from './components/resume/Resume';
 import Portfolio from './components/portfolio/Portfolio';
-// import Contact from './components/contact/Contact';
+import Contact from './components/contact/Contact';
 
 function App() {
   return (
@@ -19,12 +19,9 @@ function App() {
        
         <Resume/>
         <Portfolio/>
-        {/* <Testimonials/> */}
-        {/* <Portfolio/>
-        <Pricing/>
-        
-        <Blog/>
-        <Contact/> */}
+
+        <Contact/>
+       
       </main>
     </>
   );
