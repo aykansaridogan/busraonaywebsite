@@ -17,7 +17,7 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     
-    emailjs.sendForm('service_tb0mkis', 'template_vy2pwya', e.target, 'IQrw8pCinj98N0BCk')
+    emailjs.sendForm('service_ls449zk', 'template_vy2pwya', e.target, 'IQrw8pCinj98N0BCk')
       .then((result) => {
           console.log(result.text);
           alert('Message sent successfully!');

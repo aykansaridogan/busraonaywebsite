@@ -27,9 +27,12 @@ const Shape = styled.div`
 `;
 
 const shapes = [
-  { id: 1, svg: '<svg viewBox="0 0 100 100"><path d="M50 15C35 0 0 20 0 50c0 20 20 40 50 50 30-10 50-30 50-50 0-30-35-50-50-35z" fill="rgba(255, 0, 0, 0.5)" /></svg>' },
-  { id: 2, svg: '<svg viewBox="0 0 100 100"><path d="M50 15C35 0 0 20 0 50c0 20 20 40 50 50 30-10 50-30 50-50 0-30-35-50-50-35z" fill="rgba(255, 105, 180, 0.5)" /></svg>' },
-  { id: 3, svg: '<svg viewBox="0 0 100 100"><path d="M50 15C35 0 0 20 0 50c0 20 20 40 50 50 30-10 50-30 50-50 0-30-35-50-50-35z" fill="rgba(255, 182, 193, 0.5)" /></svg>' },
+  { id: 1, svg: '<svg viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="rgba(100, 149, 237, 0.7)" /></svg>' }, // Mikroskop bakışından bir hücre
+  { id: 2, svg: '<svg viewBox="0 0 100 100"><rect x="25" y="25" width="50" height="50" fill="rgba(60, 179, 113, 0.7)" /></svg>' }, // Mikroskop slide
+  { id: 3, svg: '<svg viewBox="0 0 100 100"><path d="M50 5 L15 90 H85 Z" fill="rgba(255, 160, 122, 0.7)" /></svg>' }, // DNA sarmalı üstten görünüm
+  { id: 4, svg: '<svg viewBox="0 0 100 100"><path d="M50 0 L75 100 L25 100 Z" fill="rgba(255, 218, 185, 0.7)" /></svg>' }, // Biyomedikal sembol
+  { id: 5, svg: '<svg viewBox="0 0 100 100"><path d="M20 80 C40 10, 60 10, 80 80" fill="none" stroke="rgba(135, 206, 235, 0.7)" stroke-width="10" /></svg>' }, // Kalp ritmi eğrisi
+  { id: 6, svg: '<svg viewBox="0 0 100 100"><polygon points="50,15 90,85 10,85" fill="rgba(192, 192, 192, 0.7)" /></svg>' }, // Üçgen şekil
 ];
 
 const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) + min;
@@ -37,7 +40,7 @@ const getRandomInt = (min, max) => Math.floor(Math.random() * (max - min + 1)) +
 const ShapeComponent = () => {
   return (
     <ShapeContainer>
-      {Array.from({ length: 15 }).map((_, index) => {
+      {Array.from({ length: 20 }).map((_, index) => {
         const shape = shapes[getRandomInt(0, shapes.length - 1)];
         return (
           <Shape
