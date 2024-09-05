@@ -8,20 +8,20 @@ const data = [
     {
         id: 1,
         image: Image1,
-        title: "UI/UX design",
-        description: "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+        title: "MS Office",
+        description: "I am skilled in using MS Office applications and can successfully manage complex projects with a systematic approach.",
     },
     {
         id: 2,
         image: Image2,
-        title: "Web Development",
-        description: "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+        title: "Product Tracking System",
+        description: "I have utilized a product tracking system that enhances the efficiency and accuracy of managing inventory. This system enables real-time monitoring of products throughout the supply chain, from production to delivery. By integrating barcode scanning and automated updates, it ensures that inventory levels are always up-to-date, reducing the likelihood of stockouts or overstocking. Additionally, the system provides detailed reports and analytics, allowing for better decision-making and optimization of the supply chain processes",
     },
     {
         id: 3,
         image: Image3,
-        title: "Photography",
-        description: "Lorem ipsum dolor sit amet consectetuer adipiscing elit aenean commodo ligula eget.",
+        title: "English",
+        description: "My proficiency in both Turkish and English allows me to communicate effectively in written and verbal forms at both national and international levels.",
     },
 ];
 

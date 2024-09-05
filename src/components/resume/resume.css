@@ -1,23 +1,34 @@
 .resume__container {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Adjusted for responsive layout */
+    gap: 1.875rem; /* Adjusted gap for consistency */
     padding-left: 1.875rem;
-    column-gap: 1.875rem;
     margin-top: 2rem;
 }
 
 .timeline {
     background-color: var(--container-color);
-    padding: 1.875rem;
     border-radius: var(--border-radius);
-    position: relative;
     box-shadow: var(--shadow);
+    margin-bottom: 1.875rem; /* Add margin-bottom if needed */
+}
+
+/* Specific styles for education timeline items */
+.timeline.education {
+    padding: 1rem; /* Reduced padding for education items */
+    max-width: 70%; /* Limit the width to make it smaller */
+    background-color: #fff; /* Ensure white background for education items */
+    margin: 0 auto; /* Center the education timeline */
+}
+
+.timeline.experience {
+    padding: 1.875rem; /* Adjust padding for experience items if needed */
 }
 
 .timeline__item {
     position: relative;
     padding-left: 3.125rem;
-    padding-bottom: 3.125rem;
+    padding-bottom: 1.875rem; /* Adjust padding-bottom to reduce space */
 }
 
 .timeline__item:last-child {
@@ -26,32 +37,32 @@
 
 .timeline__item::before {
     content: '';
-    width: 2px; /* Çizginin genişliği ayarlandı */
+    width: 2px; /* Adjust line width */
     height: 100%;
     background-color: var(--first-color);
     position: absolute;
-    left: 1.25rem; /* Çizginin sola olan uzaklığı ayarlandı */
+    left: 1.25rem; /* Adjust line distance from left */
     top: 0;
 }
 
 .timeline .icon-briefcase,
 .timeline .icon-graduation {
     position: absolute;
-    top: -0.4375rem; /* İkonun çizginin üzerinde olmasını sağlamak için yukarı kaydırıldı */
-    left: 0; /* İkonun sola hizalanması sağlandı */
+    top: -0.4375rem; /* Adjust icon positioning */
+    left: 0;
     font-size: var(--h2-font-size);
     color: var(--first-color);
     background-color: var(--container-color);
     padding: 0.4375rem;
-    border-radius: 50%; /* İkonların dairesel olması sağlandı */
-    box-shadow: var(--shadow); /* İkonlara gölge eklenebilir */
+    border-radius: 50%;
+    box-shadow: var(--shadow);
 }
-
 
 .timeline__date {
     color: #8b88b1;
     font-size: var(--small-font-size);
 }
+
 .timeline__title {
     font-size: var(--h3-font-size);
     margin: 0.5rem 0;
