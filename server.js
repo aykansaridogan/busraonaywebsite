@@ -25,8 +25,8 @@ app.post('/send-email', (req, res) => {
         port: 587,
         secure: false, // TLS kullanımı için false
         auth: {
-            user: 'magiclinedeneme@hotmail.com',
-            pass: 'A.s.4345@@'
+            user: 'yourmail',
+            pass: 'yourpass'
         }
     });
     
